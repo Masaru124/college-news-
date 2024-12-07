@@ -477,6 +477,11 @@ footer p{
     padding: 30px;
     font-size: 21px;
 }
+
+.links a i{
+    color: white;
+    text-decoration: none;
+}
 /* Animations */
 @keyframes fadeInDown {
     from {
