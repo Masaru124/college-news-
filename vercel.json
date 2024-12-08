@@ -15,5 +15,6 @@
   ],
   "env": {
     "DJANGO_SETTINGS_MODULE": "news.settings"
-  }
+  },
+  "buildCommand": "pip install -r requirements.txt"
 }
