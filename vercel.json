@@ -11,6 +11,6 @@
       }
   ],
   "environment": {
-      "DJANGO_SETTINGS_MODULE": "news.settings"
+      "includeFiles": [".env"]
   }
 }
