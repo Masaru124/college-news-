@@ -51,12 +51,10 @@
 </head>
 
 <body>
-
     <div class="welcome">
         <img src="{% static 'images/amc.png' %}" alt="Amc Logo">
         Welcome to AMC News
     </div>
-
     <script>
         setTimeout(() => {
             window.location.href = "{% url 'index' %}";
