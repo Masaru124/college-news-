@@ -1,20 +1,13 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "manage.py",
+  "builds": [{
+      "src": "news/wsgi.py",
       "use": "@vercel/python",
-      "config": {
-        "distDir": "dist",
-        "runtime": "python3.9"
-      }
-    }
-  ],
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+  }],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "manage.py",
-      "methods": ["GET", "POST", "PUT", "DELETE"]
-    }
+      {
+          "src": "/(.*)",
+          "dest": "news/wsgi.py"
+      }
   ]
 }
