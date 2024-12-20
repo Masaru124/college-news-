@@ -34,14 +34,14 @@
                 <h2 class="title">Submit an Article</h2>
                 
                 <div class="form-group">
-                    <label for="title">Article Title</label><br>
+                    <label for="title">Article Title</label><br><br>
                     <input type="text" name="title" id="title" required placeholder="Enter article title">
                 </div>
 
                 <div class="form-group">
-                    <label for="category">Category</label><br>
+                    <label for="category">Category</label><br><br>
                     <select name="category" id="category" required>
-                        <option value="">Select a category</option>
+                        <option value="" disabled selected>Select a category</option>
                         {% for category in form.category.field.queryset %}
                         <option value="{{ category.id }}">{{ category.name }}</option>
                         {% endfor %}
@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="content">Content</label><br>
+                    <label for="content">Content</label><br><br>
                     <textarea name="content" id="content" required rows="8"
                         placeholder="Write your article content here..."></textarea>
                 </div>
