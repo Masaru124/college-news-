@@ -33,7 +33,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: var(--white);
+    background-color: #006994;
     box-shadow: var(--shadow);
 }
 
@@ -351,15 +351,6 @@ select:focus {
     font-style: italic;
 }
 
-/* readmore */
-
-/* <h1>{{ article.title }}</h1>
-        <p>By: {{ article.author.username }}</p>
-        <p>Category: {{ article.category.name }}</p>
-        <p>{{ article.content|safe }}</p>
-        <p>Published on: {{ article.published_date }}</p>
-        <a href="{% url 'index' %}">Back to Home</a> */
-
 .artcont{
     max-width: 800px;
     background-color: rgba(255, 255, 255, 0.741);
@@ -461,7 +452,7 @@ button:hover {
 footer{
     bottom: 0;
     position: fixed;
-    height: 40px;
+    height: 50px;
     background-color: #003459;
     width: 100%;
     display: flex;
